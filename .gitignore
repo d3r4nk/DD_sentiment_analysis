@@ -166,4 +166,4 @@ cython_debug/
 data/raw/*.csv
 data/raw/*.json
 data/processed/*.csv
-images/*.png
+
