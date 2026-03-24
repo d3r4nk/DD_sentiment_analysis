@@ -21,55 +21,55 @@ The notebook behind this project is:
 
 The cleaned dataset keeps the original review text and creates a normalized text column used by later NLP steps.
 
-![Preprocessing preview](image/preprocess.png)
+![Preprocessing preview](images/preprocess.png)
 
 ### 2) Review length distribution
 
 Most reviews are short, with a long right tail of detailed reviews.
 
-![Review length distribution](image/review_length_distribution.png)
+![Review length distribution](images/review_length_distribution.png)
 
 ### 3) General sentiment score distribution
 
 The sentiment distribution is strongly skewed toward positive values.
 
-![General sentiment score distribution](image/general_sentiment_scores_distribution.png)
+![General sentiment score distribution](images/general_sentiment_scores_distribution.png)
 
 ### 4) Logistic Regression on `voted_up`
 
 Baseline text classification for whether a review is recommended.
 
-![Logistic Regression on voted_up](image/positive_prediction.png)
+![Logistic Regression on voted_up](images/positive_prediction.png)
 
 ### 5) Logistic Regression on `playtime_bucket`
 
 Multi-class baseline that predicts playtime segment from cleaned review text.
 
-![Logistic Regression on playtime bucket](image/playtime_logistic_regression.png)
+![Logistic Regression on playtime bucket](images/playtime_logistic_regression.png)
 
 ### 6) XGBoost on above/below-average playtime
 
 Binary prediction of whether a player is above the mean playtime threshold based on review text.
 
-![XGBoost playtime prediction](image/playtime_prediction.png)
+![XGBoost playtime prediction](images/playtime_prediction.png)
 
 ### 7) Theme mention counts
 
 Combat and progression/difficulty are the most frequently mentioned themes.
 
-![Theme mentions](image/theme_mention.png)
+![Theme mentions](images/theme_mention.png)
 
 ### 8) LDA topics
 
 Topic modeling reveals clusters around atmosphere/art, turn-based RPG identity, heroes/party/stress, and general evaluation language.
 
-![LDA topics](image/topic_lda.png)
+![LDA topics](images/topic_lda.png)
 
 ### 9) Top bigrams
 
 Frequent bigrams reflect game identity, genre language, art style, and review intent.
 
-![Top bigrams](image/bigram_count.png)
+![Top bigrams](images/bigram_count.png)
 
 ---
 
@@ -525,21 +525,21 @@ These align well with the game’s identity, mechanics, and recommendation langu
 
 # Folder assumptions for GitHub
 
-This README expects the following image paths inside the repository:
+This README expects the following images paths inside the repository:
 
 ```text
-image/preprocess.png
-image/review_length_distribution.png
-image/general_sentiment_scores_distribution.png
-image/positive_prediction.png
-image/playtime_logistic_regression.png
-image/playtime_prediction.png
-image/theme_mention.png
-image/topic_lda.png
-image/bigram_count.png
+images/preprocess.png
+images/review_length_distribution.png
+images/general_sentiment_scores_distribution.png
+images/positive_prediction.png
+images/playtime_logistic_regression.png
+images/playtime_prediction.png
+images/theme_mention.png
+images/topic_lda.png
+images/bigram_count.png
 ```
 
-If your repository uses a different folder layout, update the relative image paths accordingly.
+If your repository uses a different folder layout, update the relative images paths accordingly.
 
 ---
 
